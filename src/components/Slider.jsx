@@ -8,8 +8,6 @@ function classNames(...classes) {
 }
 
 const Slider = () => {
-	const [slide, setSlide] = useState()
-
 	return (
 		<div className='container w-full h-screen flex'>
 			<div className='arrow w-12 h-12 bg-gray-400 rounded-[50%] flex justify-center items-center absolute top-[50%] left-2 cursor-pointer opacity-50'>
@@ -19,11 +17,11 @@ const Slider = () => {
 			<div className='wrapper flex '>
 				{slideItems.map(slideItem => (
 					<div
-						id={slideItem.id}
+						key={slideItem.id}
 						className={classNames('slide wrapper-image flex items-center w-screen', slideItem.background)}
 					>
 						<div className='img-container flex-1'>
-							<img src={slideItem.path} />
+							<img src={process.env.PUBLIC_URL + './public.5244.png'} />
 						</div>
 						<div className='info-container flex-1 p-12'>
 							<h1 className=' text-7xl'>{slideItem.title}</h1>
