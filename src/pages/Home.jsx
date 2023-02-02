@@ -1,16 +1,18 @@
-import React, {Fragment} from 'react'
+import React, { Fragment } from 'react'
 import Announcement from '../components/Announcement'
+import Categories from '../components/Categories'
 import Navbar from '../components/Navbar'
 import Slider from '../components/Slider'
 
 const Home = () => {
-  return (
-    <>
-        <Announcement />  
-        <Navbar />
-        <Slider />
-    </>
-  )
+	return (
+		<>
+			<Announcement />
+			<Navbar />
+			<Slider />
+			<Categories />
+		</>
+	)
 }
 
 export default Home
