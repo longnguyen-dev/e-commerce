@@ -35,12 +35,13 @@ const Slider = () => {
 				{sliderItems.map(sliderItem => (
 					<div
 						key={slideIndex.id}
+						id={slideIndex.id}
 						className={classNames('w-screen h-screen flex items-center', `bg-[${sliderItem.bg}]`)}
 					>
-						<div id='img-container' className='flex-1 h-full flex items-center'>
+						<div className='flex-1 h-full flex items-center'>
 							<img src={sliderItem.img} className='h-[70%] ' alt='slider-image' />
 						</div>
-						<div id='info-container' className='flex-1 p-12'>
+						<div className='flex-1 p-12'>
 							<h1 className=' text-7xl'>{sliderItem.title}</h1>
 							<p className=' my-12 text-xl font-medium tracking-[3px]'>{sliderItem.desc}</p>
 							<button className=' text-xl p-2 bg-transparent border-gray-500 border-solid border-2 cursor-pointer'>
