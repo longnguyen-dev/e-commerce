@@ -1,7 +1,7 @@
 export const sliderItems = [
   {
     id: 1,
-    img: "/images/slider/slider-02.png",
+    img: "/images/slider/slider-01.png",
     title: "SUMMER SALE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "#f5fafd",
@@ -11,14 +11,14 @@ export const sliderItems = [
     img: "/images/slider/slider-02.png",
     title: "AUTUMN COLLECTION",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    bg: "#f5fafd",
+    bg: "#fcf1ed",
   },
   {
     id: 3,
-    img: "/images/slider/slider-02.png",
+    img: "/images/slider/slider-03.png",
     title: "LOUNGEWEAR LOVE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    bg: "#f5fafd",
+    bg: "#fbf0f4",
   },
 ];
 

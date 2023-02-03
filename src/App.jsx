@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { StrictMode } from 'react'
 import Home from './pages/Home'
 
 const App = () => {
-  return (
-    <>
-      <Home />
-    </>
-  )
+	return (
+		<StrictMode>
+			<Home />
+		</StrictMode>
+	)
 }
 
 export default App
