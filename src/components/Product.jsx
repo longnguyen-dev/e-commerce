@@ -2,7 +2,7 @@ import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@m
 
 const Product = ({ path }) => {
 	return (
-		<div className='group flex-1 m-1 min-w-[420px] h-[350px] bg-[#f5fbfd] flex items-center justify-center relative'>
+		<div className='group flex-1 m-1 min-w-[280px] max-w-[420px] h-[350px] bg-[#f5fbfd] flex items-center justify-center relative'>
 			{/* Container */}
 			<div className=' h-52 w-52 bg-white rounded-full absolute'>{/* Circle */}</div>
 			<img src={path} className=' h-[75%] max-w-[200px] z-10 absolute'></img>
