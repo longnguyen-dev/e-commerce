@@ -17,11 +17,11 @@ const Slider = () => {
 		if (direction === 'right') {
 			setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0)
 		}
-		return
 	}
 
 	return (
-		<div className='w-full h-screen flex relative'>
+		<div className='w-full h-screen flex relative overflow-hidden'>
+			{/* Container */}
 			<div
 				className=' w-[50px] h-[50px] bg-gray-300 rounded-[50%] flex justify-center items-center absolute top-0 bottom-0 left-[10px] m-auto cursor-pointer opacity-50 z-20'
 				onClick={() => handleClick('left')}
@@ -29,7 +29,8 @@ const Slider = () => {
 				<ArrowLeftOutlined />
 			</div>
 
-			<div className={`h-full flex transit -translate-y-[${slideIndex * 100}vw]`}>
+			<div className={`h-full flex transition duration-700 -translate-x-[${slideIndex * 100}vw]`}>
+				{console.log(slideIndex)}
 				{sliderItems.map(item => (
 					<div key={item.id} className={classNames('w-screen h-screen flex items-center', `bg-[${item.bg}]`)}>
 						<div className='flex-1 h-full flex items-center justify-end'>
